@@ -185,19 +185,6 @@ pclips6:[audioClips21,audioClips22,audioClips23,audioClips24]
 
 }
 
-// const gvol = [
-// Howler.volume(0.1),
-// Howler.volume(0.2),
-// Howler.volume(0.3),
-// Howler.volume(0.4),
-// Howler.volume(0.5),
-// Howler.volume(0.6),
-// Howler.volume(0.7),
-// Howler.volume(0.8),
-// Howler.volume(0.9),
-// Howler.volume(1.0)
-
-// ]
 
 const gvol = [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0]
 

@@ -177,17 +177,6 @@ position: relative;
     height: 94.2vh;
 }
 
- .knob
- {
-width: 20px;
-position: absolute;
-left: 28.0vw;
-top: 29.6vh;
-width: 4.8vw;
-transform:rotate(10deg);
- }
-
-
  @media (prefers-reduced-motion: no-preference) {
     .s {
       animation: App-logo-spin infinite 7s linear;
@@ -215,6 +204,7 @@ background-color: rgb(144, 144, 144);
 color: rgb(61, 59, 59);
 outline-style: none;
 border-radius: 3px;
+
 }
 
 
@@ -229,6 +219,7 @@ border-radius: 3px;
     height: 20px;
     border:2px solid rgb(238, 238, 238);
     font-weight: bolder;
+    cursor: pointer;
 
   }
 
@@ -265,6 +256,102 @@ right: 40vh;
 
   }
 
-
-  
- 
+  .knob
+  {
+ width: 20px;
+ position: absolute;
+ left: 28.0vw;
+ top: 29.6vh;
+ width: 4.8vw;
+ transform:rotate(0deg);
+  }
+  .knob-1
+  {
+ width: 20px;
+ position: absolute;
+ left: 28.0vw;
+ top: 29.6vh;
+ width: 4.8vw;
+ transform:rotate(40deg);
+  }
+  .knob-2
+  {
+ width: 20px;
+ position: absolute;
+ left: 28.0vw;
+ top: 29.6vh;
+ width: 4.8vw;
+ transform:rotate(70deg);
+  }
+  .knob-3
+  {
+ width: 20px;
+ position: absolute;
+ left: 28.0vw;
+ top: 29.6vh;
+ width: 4.8vw;
+ transform:rotate(100deg);
+  }
+  .knob-4
+  {
+ width: 20px;
+ position: absolute;
+ left: 28.0vw;
+ top: 29.6vh;
+ width: 4.8vw;
+ transform:rotate(130deg);
+  }
+  .knob-5
+  {
+ width: 20px;
+ position: absolute;
+ left: 28.0vw;
+ top: 29.6vh;
+ width: 4.8vw;
+ transform:rotate(170deg);
+  }
+  .knob-6
+  {
+ width: 20px;
+ position: absolute;
+ left: 28.0vw;
+ top: 29.6vh;
+ width: 4.8vw;
+ transform:rotate(200deg);
+  }
+  .knob-7
+  {
+ width: 20px;
+ position: absolute;
+ left: 28.0vw;
+ top: 29.6vh;
+ width: 4.8vw;
+ transform:rotate(230deg);
+  }
+  .knob-7
+  {
+ width: 20px;
+ position: absolute;
+ left: 28.0vw;
+ top: 29.6vh;
+ width: 4.8vw;
+ transform:rotate(260deg);
+  }
+  .knob-9
+  {
+ width: 20px;
+ position: absolute;
+ left: 28.0vw;
+ top: 29.6vh;
+ width: 4.8vw;
+ transform:rotate(290deg);
+  }
+  .knob-10
+  {
+ width: 20px;
+ position: absolute;
+ left: 28.0vw;
+ top: 29.6vh;
+ width: 4.8vw;
+ transform:rotate(320deg);
+  }
