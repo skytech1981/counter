@@ -185,21 +185,21 @@ pclips6:[audioClips21,audioClips22,audioClips23,audioClips24]
 
 }
 
-// const gvol ={
-// vol1: Howler.volume(0.1),
-// vol2: Howler.volume(0.2),
-// vol3: Howler.volume(0.3),
-// vol4: Howler.volume(0.4),
-// vol5: Howler.volume(0.5),
-// vol6: Howler.volume(0.6),
-// vol7: Howler.volume(0.7),
-// vol8: Howler.volume(0.8),
-// vol9: Howler.volume(0.9),
-// vol10:Howler.volume(1.0)
+// const gvol = [
+// Howler.volume(0.1),
+// Howler.volume(0.2),
+// Howler.volume(0.3),
+// Howler.volume(0.4),
+// Howler.volume(0.5),
+// Howler.volume(0.6),
+// Howler.volume(0.7),
+// Howler.volume(0.8),
+// Howler.volume(0.9),
+// Howler.volume(1.0)
 
-// }
+// ]
 
-
+const gvol = [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0]
 
 
 
@@ -217,7 +217,7 @@ this.state = {
            clips2:audioClips2,
            clips3:audioClips3,
            clips4:audioClips4,
-         
+          currentVol:Howler.volume(0.1)
 
           }
 
@@ -230,7 +230,7 @@ this.state = {
 
 
 onChange=(e)=> {
- console.log(e.target.value )
+ 
   this.setState({
           // clips1:  e.target.value === 'clips1' ? audioClips1: e.target.value === 'clips2' ? audioClips5 : audioClips9 ,
           // clips2:  e.target.value === 'clips1' ? audioClips2: e.target.value === 'clips2' ? audioClips6 : audioClips10,
@@ -255,25 +255,11 @@ onChange=(e)=> {
    
 }
 
-// volOnChange=(e)=> {
-//   console.log(e.target.value )
-//    this.setState({
-       
-//     vol1: vol[e.target.value][0],
-//     vol2: vol[e.target.value][1],
-//     vol3: vol[e.target.value][2],
-//     vol4: vol[e.target.value][3],
-//     vol5: vol[e.target.value][4],
-//     vol6: vol[e.target.value][5],
-//     vol7: vol[e.target.value][6],
-//     vol8: vol[e.target.value][7],
-//     vol9: vol[e.target.value][8],
-//     vol10:vol[e.target.value][9]
-    
-//        });
-     
-    
-//  }
+volOnChange=(e)=> {
+  console.log(e.target.value );
+  this.setState({currentVol: gvol[e.target.value]});
+
+ }
  
 
 componentDidMount() {
@@ -417,8 +403,8 @@ rendButtonAndSound5 = () => {
 
 
 render(){
-  console.log(this.state)
-    // Howler.volume(1.0)
+
+    Howler.volume(this.state.currentVol)
 
             return( 
               (
@@ -444,8 +430,8 @@ render(){
                                 <option value="pclips6">Oldies Filterd</option>
                           </select>
                           <h3 className="time">{this.state.time}</h3>
-                          {/* <input type="range"  min="0" max="9" onChange={this.volOnChange} className="currentVolume"   value={this.state.value} step="1"/>   */}
-                            {/* <button className="updateb" onClick={updateVolume()}>update volume</button>                     */}
+                          <input type="range"  min="0" max="9" onChange={this.volOnChange} className="currentVolume"   value={this.state.value} step="1"/>  
+                        
                       </div>
                     </div>
                   </div>
