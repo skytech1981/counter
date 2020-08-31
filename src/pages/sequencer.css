@@ -171,7 +171,7 @@ position: relative;
 .lether
 {
     position: absolute;
-    left: 2px;
+    left: 0px;
     top:-10vh;
     width: 100vw;
     height: 94.2vh;
@@ -179,12 +179,12 @@ position: relative;
 
  .knob
  {
-
+width: 20px;
 position: absolute;
-left: 21.5vw;
-top: 23.7vh;
-width: 6vw;
-
+left: 28.0vw;
+top: 29.6vh;
+width: 4.8vw;
+transform:rotate(10deg);
  }
 
 

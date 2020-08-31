@@ -431,7 +431,7 @@ render(){
                           </select>
                           <h3 className="time">{this.state.time}</h3>
                           <input  type="range"  min="0" max="9" onChange={this.volOnChange} className="currentVolume"   value={this.state.value} step="1"/>  
-                        
+                          <img className="knob" src={ require('../pages/knob.png') }/>
                       </div>
                     </div>
                   </div>
