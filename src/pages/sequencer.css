@@ -37,8 +37,8 @@ position: relative;
     display: flex;
  justify-content: flex-start;
     border-radius: 20px;
-    margin-left:55.2vh;
-    margin-top: -1.5vh;
+    margin-left:49vh;
+    margin-top: 3.1vh;
     width: 10vw;
     height: 50.6vh;
     
@@ -208,9 +208,9 @@ width: 6vw;
 .currentPreset
 {
 position: absolute;
-width:137px;
-top: 12.5vh;
-left: 30.1vw;
+width:144px;
+top: 12.6vh;
+left: 29.9vw;
 background-color: rgb(144, 144, 144);
 color: rgb(61, 59, 59);
 outline-style: none;
@@ -265,13 +265,6 @@ right: 40vh;
 
   }
 
-  .updateb
-  {
-      position: relative;
-      left: -60vw;
-    width:340px;
-   height: 10px;
-   border-radius: 0px;
 
-
-  }
+  
+ 

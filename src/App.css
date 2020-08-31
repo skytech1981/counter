@@ -492,9 +492,12 @@ width: 40VW;
 .currentVolume
 {
   position: relative;
-  left: -140vh;
-width: 30vw;
-height: 20px;
+  background-color: green;
+  color: green;
+  left: -137vh;
+  top: -10px;
+width:60px;
+height: 10px;
 margin-left: 0;
 
 }
